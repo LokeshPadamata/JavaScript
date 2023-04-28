@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            
+            var employee ={
+
+                name: "kiran",
+                empid: "101",
+                address:
+                {
+                    Dno: "2-1016",
+                    city:"Hyderabad",
+                    state:"Telangana"
+                },
+                languages: ["Telugu","Hindi","English"],
+                projects: [
+                    {
+                        name : "CRM",
+                        client: "Digital Lync"
+                    },
+                     {
+                        name : "LMS",
+                        client: "Digital Lync"
+                    },
+                    {
+                        name : "Ecommerce",
+                        client: "Digital Lync"
+                    },
+                ]
+            }
+            console.log(employee.empid);
+            console.log(employee.projects[1].name);
+            employee.projects[0].manager = "Sundaram";
+            console.log(employee.projects[0].manager);
+            console.log(employee);
+        </script>
+    </body>
+</html>

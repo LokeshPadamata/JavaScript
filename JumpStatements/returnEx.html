@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center><input  type="text" id="username" onkeyup="authenticate()" placeholder="Enter username here"><span id="msg" style="color:red"></span></center>
+        <script>
+            function authenticate(){
+                var username = document.getElementById("username").value;
+            var msg = document.getElementById("msg");
+            if (username.length == 0) {
+                msg.innerHTML = "Username required";
+                return;
+            }
+            if (username.length < 5) {
+                msg.innerHTML = "Username should be atleast 5 chars";
+
+            }
+            else {
+                msg.innerHTML = "";
+            }
+
+            }
+        </script>
+    </body>
+</html>

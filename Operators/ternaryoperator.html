@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <input type="text" id="username" placeholder="Enter your username"><br><br>
+        <input type="text" id="password" placeholder="Enter your password"><br><br>
+        <button onclick="next()">Next</button>
+    </center>
+        <script>
+            var a = "lokesh";
+            var b = "padamata";
+            function next(){
+                var usernameInput = document.getElementById("username").value;
+                var passwordInput = document.getElementById("password").value;
+                (usernameInput==a && passwordInput==b)?alert("Login success"):alert("Login failure");
+            } 
+        </script>
+    </body>
+</html>

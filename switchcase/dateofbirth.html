@@ -1,0 +1,48 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+       
+        <center>
+             <h5>Date of Birth</h5>
+            <select id="year" onchange="captureChoice()" style="background-color: aqua;color: whitesmoke;">
+                <option>Select Year</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+            <select id="month" onchange="captureChoice()" style="background-color: aqua;color: whitesmoke;">
+                <option>Select month</option>
+                <option value="Jan">jan</option>
+                <option value="Feb">feb</option>
+                <option value="March">mar</option>
+                <option value="April">apr</option>
+            </select>
+            <select id="date" onchange="captureChoice()" style="background-color: aqua;color: whitesmoke;">
+                <option>Select Date</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+            </select><br><br>
+            <span id="Y">year</span><span1>/</span1><span2 id="M">month</span2><span3>/</span3><span4 id="D">date</span4>
+        </center>
+        <script>
+            function captureChoice(){
+                var year = document.getElementById("year").value;
+                var month = document.getElementById("month").value;
+                var date = document.getElementById("date").value;    // taking user input into date
+                
+                document.getElementById("Y").innerHTML = year;     // display the input on ui
+                document.getElementById("M").innerHTML = month;
+                document.getElementById("D").innerHTML = date;
+                console.log(date);
+
+            }
+        </script>
+    </body>
+
+</html>

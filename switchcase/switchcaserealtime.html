@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <center>
+        <select id="city" onchange="captureChoice()" style="background-color: aqua;color: whitesmoke;">
+            <option>Select City</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="rangareddy">Ranga Reddy</option>
+            <option value="warangal">Warangal</option>
+            <option value="hanumakonda">Hanuma konda</option>
+        </select><br><br>
+        <select id="testcenters"  style=" background-color:lightgreen;color: whitesmoke;">
+            
+        </select>
+    </center>
+        <script>
+            
+            function captureChoice(){
+                var testcenters = document.getElementById("testcenters");
+                var city = document.getElementById("city").value;
+                switch(city){
+                    case "hyderabad": testcenters.innerHTML="<option>Hyderabad-01</option><option>Hyderabad-02</option><option>Hyderabad-03</option><option>Hyderabad-04</option>";break;
+                    case "rangareddy": testcenters.innerHTML= "<option>Ranga Reddy-01</option><option>Ranga Reddy-02</option><option>Ranga Reddy-03</option><option>Ranga Reddy-04</option>";break;
+                    case "warangal": testcenters.innerHTML= "<option>Warangal-01</option><option>Warangal-02</option><option>Warangal-03</option><option>Warangal-04</option>";break;
+                    case "hanumakonda": testcenters.innerHTML= "<option>Hanuma konda-01</option><option>Hanuma konda-02</option><option>Hanuma konda-03</option><option>Hanuma konda-04</option>";
+
+                }
+            }
+
+        </script>
+    </body>
+</html>

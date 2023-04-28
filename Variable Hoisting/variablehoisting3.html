@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            console.log(a);    //  undefined
+            //console.log(b);    //error because there is no global variable b
+            function f1(){
+                console.log(a);     //  undefined 
+                //console.log(b);     //error because there is no local variable b
+                a=10;
+                b=20;
+                a=0;
+                b=1;
+                console.log(a);    // 0
+            }
+            f1();
+            console.log(a);     // 0
+            var a=90;
+
+
+            /*
+
+            Variable Hoisting: 
+
+            var a;
+            console.log(a);    // undefined 
+            
+            function f1(){
+                console.log(a);     //  undefined 
+                //console.log(b);     //error because there is no local variable b
+                a=10;
+                b=20;
+                a=0;
+                b=1;
+                console.log(a);    // 0
+            }
+            f1();
+            console.log(a);     // 0
+            var a=90;
+            */
+        </script>
+    </body>
+</html>

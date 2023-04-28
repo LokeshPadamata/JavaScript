@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var employee={
+                name: "Kiran",
+                address: "hyderabad",
+                getDetails: function (a,b,c){
+                    return this.name+"\t"+this.address+"\t"+a+"\t"+b+"\t"+c;
+                }
+            }
+            var employee2={
+                name: "Naveen",
+                address: "hyderabad",
+            }
+            console.log(employee.getDetails(10,20,30));   
+            
+            var arr = [1,2,3];
+            console.log(employee.getDetails.call(employee2,arr[0],arr[1],arr[2]));
+            console.log(employee.getDetails.apply(employee2,arr));    // same as call , but it automatically spreads the array while we pass it as the next argument.
+            
+        </script>
+    </body>
+</html>

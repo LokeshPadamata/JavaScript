@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            //console.log(a);    //error because there is no global variable a
+            //console.log(b);    //error because there is no global variable b
+            function f1(){
+                //console.log(a);     //error because there is no local variable a
+                //console.log(b);     //error because there is no local variable b
+                a=10;
+                b=20;
+                a=0;
+                b=1;
+            }
+            f1();
+            console.log(a);
+            console.log(b);
+        </script>
+    </body>
+</html>

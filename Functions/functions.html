@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function f(a,b){
+                console.log(a,b);
+            }
+            f(10,20)
+            
+            function f1(a,b){
+                console.log(a,b);
+            }
+            f(10,20,30,40)
+
+            function f2(a,b){
+                console.log(a,b);
+                console.log(arguments);    //to print all the arguments that are passed into the funtion
+                console.log(arguments[2]);
+                console.log(arguments[3]);
+            }
+            f2(10,20,30,40)
+
+            function x(a,b){
+                console.log(a,b);
+            }
+            function x(){
+                console.log("x");
+            }
+            x(10,20);
+           
+        </script>
+    </body>
+</html>

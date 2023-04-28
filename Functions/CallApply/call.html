@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            var employee = {
+                name: "kiran",
+                address: "hyderabad",
+                getDetails: function (a,b,c){
+                    return this.name+"\t"+this.address+"\t"+a+"\t"+b+"\t"+c;
+                }
+            }
+            console.log(employee.getDetails());
+            var employee2 = {
+                name: "Naveen",
+                address: "hyderabad",
+            }
+            console.log(employee.getDetails.call(employee2));
+            console.log(employee.getDetails.call(employee2,10,20,30));
+
+        </script>
+
+    </body>
+</html>

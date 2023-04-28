@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <center>
+        <input type="text" id="username" placeholder="Enter username here"><br><br>
+        <input type="text" id="password" placeholder="Enter password here"><br><br>
+        <button onclick="next()">Login</button></center>
+        <script>
+            var MobileNo = "8639777017";
+            var email = "lokesh@gmail.com";
+            var pswrd = "lokesh123";
+              
+            function next(){
+                var usernameInput = document.getElementById("username").value;
+                var passwordInput = document.getElementById("password").value;
+                if((usernameInput==MobileNo || usernameInput ==email) && passwordInput==pswrd){
+                    alert("Login success");
+                }
+                else{
+                    alert("Login Failure");
+                }
+            }
+        </script>
+    </body>
+</html>

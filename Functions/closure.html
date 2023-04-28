@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function outer(){
+                var a =10;
+                var b =20;
+                function inner(){   // private function
+                    console.log(a);
+                    console.log(b);
+                }
+                inner()
+                return inner;
+            }
+            //outer()
+            var m =outer();
+            m();
+            
+        </script>
+    </body>
+</html>
